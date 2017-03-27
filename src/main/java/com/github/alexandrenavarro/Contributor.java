@@ -1,4 +1,4 @@
-package com.github.alexandrenavarro.feign;
+package com.github.alexandrenavarro;
 
 import lombok.Data;
 
@@ -10,3 +10,4 @@ public class Contributor {
     private String login;
     private int contributions;
 }
+

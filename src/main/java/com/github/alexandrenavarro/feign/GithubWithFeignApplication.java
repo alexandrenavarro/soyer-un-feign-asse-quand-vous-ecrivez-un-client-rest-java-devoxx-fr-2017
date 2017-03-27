@@ -1,5 +1,6 @@
 package com.github.alexandrenavarro.feign;
 
+import com.github.alexandrenavarro.Contributor;
 import feign.Feign;
 import feign.jackson.JacksonDecoder;
 import lombok.extern.slf4j.Slf4j;
@@ -11,8 +12,7 @@ import java.util.List;
  * Created by anavarro on 26/03/17.
  */
 @Slf4j
-@EnableFeignClients
-public class GithubDemo {
+public class GithubWithFeignApplication {
 
     public static void main(String... args) {
         final GithubWithFeignResource githubWithFeignResource = Feign.builder()
@@ -23,3 +23,4 @@ public class GithubDemo {
         log.info("contributors:{}", contributors);
     }
 }
+
